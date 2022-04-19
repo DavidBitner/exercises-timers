@@ -5,23 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercises Timers</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
   </head>
   <body>
+    <button class="btn reset">Reset</button>
     <div class="container">
-      <button class="reset">Reset</button>
+
+      <div class="timer">
+        <div class="time-left">000</div>
+        <div class="progress"></div>
+      </div>
+      <div class="timer">
+        <div class="time-left">000</div>
+        <div class="progress"></div>
+      </div>
+      <div class="timer">
+        <div class="time-left">000</div>
+        <div class="progress"></div>
+      </div>
+      <div class="timer">
+        <div class="time-left">000</div>
+        <div class="progress"></div>
+      </div>
     </div>
     <div class="overlay">
       <div class="modal">
-        <input
-          type="text"
-          class="numberTimers"
-          placeholder="Amount of timers"
-        />
-        <input
-          type="text"
-          class="durationTimers"
-          placeholder="Timers duration in seconds"
-        />
+        <input type="text" class="numberTimers" placeholder="Timers" />
+        <input type="text" class="durationTimers" placeholder="Seconds" />
+
+        <button class="btn add">ADD</button>
       </div>
     </div>
   </body>

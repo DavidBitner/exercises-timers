@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  box-sizing: border-box;
+  color: white;
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.timer {
+  background-color: rgb(5, 5, 5);
+  padding: 2rem;
+  font-size: 2.5rem;
+  box-shadow: inset 0px 0px 10px white;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 128, 0, 0.5);
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  visibility: hidden;
+}
+
+.modal {
+  display: grid;
+  gap: 2rem;
+  background-color: black;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px white;
+  transition: all 0.2s;
+  transform: scale(0);
+}
+
+input {
+  transition: all 0.2s;
+  font-size: 2rem;
+  text-align: center;
+  width: 10rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px white;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0px 0px 20px black;
+  border: none;
+  color: white;
+  letter-spacing: 3px;
+  box-shadow: 0px 0px 25px white;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px white;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.reset {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+::selection {
+  background-color: black;
+}
