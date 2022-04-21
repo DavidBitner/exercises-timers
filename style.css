@@ -50,15 +50,15 @@ body {
   min-height: 100vh;
   align-content: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 3rem;
+  padding: 3rem;
   grid-template-rows: max-content;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .timer {
   background-color: (var(--color-black-light));
-  padding: 2rem;
+  padding: 3rem;
   font-size: 2.5rem;
   box-shadow: inset 0px 0px 10px var(--color-white);
   border-radius: 10px;
@@ -105,14 +105,15 @@ body {
   align-content: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.9);
+  z-index: 3;
   visibility: hidden;
 }
 
 .modal {
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
   background-color: var(--color-black);
-  padding: 3rem;
+  padding: 5rem;
   border-radius: 10px;
   box-shadow: 0px 0px 20px var(--color-white);
   transition: all 0.2s;
@@ -120,24 +121,29 @@ body {
 }
 
 input {
-  transition: all 0.2s;
-  font-size: 2rem;
+  transition: all 0.1s;
+  font-size: 3rem;
   text-align: center;
-  width: 10rem;
   background-color: var(--color-black);
   color: var(--color-white);
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 5px var(--color-white);
+  padding: 1rem;
+}
+
+input:hover {
+  outline: none;
+  box-shadow: 0px 0px 10px var(--color-white);
 }
 
 input:focus {
   outline: none;
-  box-shadow: 0px 0px 20px var(--color-white);
+  box-shadow: 0px 0px 15px var(--color-white);
 }
 
 .btn {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 2rem 4rem;
   background-color: var(--color-black);
   cursor: pointer;
@@ -162,10 +168,10 @@ input:focus {
 
 .btns {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 3rem;
+  right: 3rem;
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
   z-index: 3;
 }
 
