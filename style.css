@@ -70,7 +70,7 @@ body {
 }
 
 .timer:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .progress {
@@ -97,7 +97,7 @@ body {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 100vw;
